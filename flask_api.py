@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 # API Route: Fetch stock price
-@app.route('/get_stock_price', methods=['GET'])
+@flask_app.route('/get_stock_price', methods=['GET'])
 def get_stock_price():
     ticker = request.args.get('ticker', 'INFY')  # Default ticker: INFY
     exchange = request.args.get('exchange', 'NSE')  # Default exchange: NSE
